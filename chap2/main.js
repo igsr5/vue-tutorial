@@ -1,9 +1,18 @@
-var data = { a: 1 }
+var data = {
+  a: 1,
+  event: 'click',
+}
 
 var vm = new Vue({
+  el: '#app',
   data: data,
   created: function() {
     console.log('created');
+  },
+  methods: {
+    doSomething: function(){
+      this.a += 1;
+    }
   }
 })
 
