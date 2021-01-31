@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue!',
-    red: 'red'
+    red: 'red',
+    seen: true,
   }
 })
