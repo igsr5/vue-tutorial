@@ -4,5 +4,6 @@ var app = new Vue({
     message: 'Hello Vue!',
     red: 'red',
     seen: true,
+    array: [0, 1, 2, 3, 4],
   }
 })
