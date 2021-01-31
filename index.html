@@ -20,7 +20,7 @@
     <input type="text" v-model="message">
 
     <ul>
-      <todo-item></todo-item>
+      <todo-item v-for="item in items" v-bind:id="item.id" v-bind:text='item.text'></todo-item>
     </ul>
   </div>
 

@@ -1,5 +1,9 @@
 Vue.component('todo-item', {
-  template: '<li>This is a todo</li>'
+  props: {
+    id: Number,
+    text: String
+  },
+  template: '<li>{{ id }}. This is a todo {{ text }}</li>',
 })
 
 var app = new Vue({
@@ -10,6 +14,11 @@ var app = new Vue({
     seen: true,
     array: [0, 1, 2, 3, 4],
     time: 'morning',
+    items: [
+      {id: 1, text: 'aaa'},
+      {id: 2, text: 'bbb'},
+      {id: 3, text: 'ccc'},
+    ],
   },
   methods: {
     changeTime: function(){
