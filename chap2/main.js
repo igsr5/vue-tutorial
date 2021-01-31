@@ -1,7 +1,10 @@
 var data = { a: 1 }
 
 var vm = new Vue({
-  data: data
+  data: data,
+  created: function() {
+    console.log('created');
+  }
 })
 
 vm.a = 2
