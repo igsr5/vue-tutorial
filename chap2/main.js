@@ -1,6 +1,7 @@
 var data = {
   a: 1,
   event: 'click',
+  message: 'Hello'
 }
 
 var vm = new Vue({
@@ -12,6 +13,11 @@ var vm = new Vue({
   methods: {
     doSomething: function(){
       this.a += 1;
+    }
+  },
+  computed: {
+    reversedMessage: function(){
+      return this.message.split('').reverse().join('');
     }
   }
 })
