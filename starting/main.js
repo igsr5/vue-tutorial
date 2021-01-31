@@ -15,9 +15,9 @@ var app = new Vue({
     array: [0, 1, 2, 3, 4],
     time: 'morning',
     items: [
-      {id: 1, text: 'aaa'},
-      {id: 2, text: 'bbb'},
-      {id: 3, text: 'ccc'},
+      'aaa',
+      'bbb',
+      'ccc',
     ],
   },
   methods: {
